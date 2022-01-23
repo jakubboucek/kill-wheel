@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Kill Wheel",
+    "description": "Extension for remove annoying custom wheel/scroll handler which broke native smooth scrolling at macOS",
+    "version": "0.1.0",
+    "author": "Jakub Bouček <pan@jakubboucek.cz>",
+    "homepage_url": "https://github.com/jakubboucek/chrome-kill-wheel",
+    "action": {
+        "default_title": "Kill wheel (remove all wheel handling customed by page)"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ]
+        }
+    ]
+}
