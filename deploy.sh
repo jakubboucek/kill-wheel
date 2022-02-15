@@ -1,7 +1,7 @@
 set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-RELEASE_FILE="$DIR/dist/kill-wheel-release.zip"
+RELEASE_FILE="$DIR/dist/natural-scroll-and-wheel-release.zip"
 
 echo -n "Preparing dist... "
 rm -rf $DIR/dist 2> /dev/null || true
